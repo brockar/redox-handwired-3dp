@@ -30,8 +30,9 @@ Hice un Redox Handwired siguiendo todas las referencias que encontré pero se me
 * 14x: tornillos M3 8mm.  
 * 2x: 3.5 mm plug de 3 polos.  
 * 2x: Arduino pro micros.  
-* A lot of cable
-* A lot of soldering
+* Cable.
+* Estaño.
+* Soldadora.
 
 ## Pasos a seguir
 1. Imprimir plates. Se puede elegir que sean todas 1u, yo imprimí ese. [link](https://www.thingiverse.com/thing:2704567/files).  
@@ -71,7 +72,7 @@ En ``qmk_firmware/`` va a quedar un archivo llamado ``redox_rev1_default.hex`` o
 * seleccionamos el archivo, 
 * seleccionamos atmega32u4, 
 * marcamos Auto-Flash, 
-* conectamos el teclado y hacemos puente con algo que sea conductivo (el estanio por ejemplo) entre estos dos [pines](https://www.shellhacks.com/wp-content/uploads/arduino_pro_micro_reset_pins.jpg).  
+* conectamos el teclado y hacemos puente con algo que sea conductivo (el estaño por ejemplo) entre estos dos [pines](https://www.shellhacks.com/wp-content/uploads/arduino_pro_micro_reset_pins.jpg).  
 Te tendria que aparecer un texto amarillo en el QMK Toolbox, cuando te aparezca el segundo tecto amarillo que dice algo como: ``Atmel DFU dive disconected (libusb0): ...``  
 
 LISTO! Ya tenes tu teclado. Cuando quieras cambiar la configuración del QMK, lo cambias en `qmk_firmware/keyboards/redox/keymaps/default/keymap.c`, lo volves a compilar (`10. `) y lo volves a [Cargar](#cargar-firmware).  
