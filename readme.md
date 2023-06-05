@@ -59,9 +59,10 @@ Si queres usar VIAL, podes hacerlo salteando este paso y siguiendo los pasos de 
 7. Escribir lo siguiente en la consola de QMK MSYS.
    1. `qmk config user.keyboard=redox/rev1`
    2. `qmk config user.keymap=default`
-8. En `qmk-firmware/keyboards/redox/rev1/config.h` agregar `#define SPLIT_HAND_PIN D2`
+8. En `qmk-firmware/keyboards/redox/rev1/config.h` agregar `#define SPLIT_HAND_PIN D2` comentar la linea 29  `//#define MATRIX_COL_PINS { F5, F6, F7, B1, B3, B2, B6 }`  
+y descomentar la 30 `#define MATRIX_COL_PINS { B6, B2, B3, B1, F7, F6, F5}`
 9.  Modificar `qmk_firmware/keyboards/redox/keymaps/default/keymap.c` a gusto, te podes guiar con la [documentación](https://docs.qmk.fm/#/keycodes).   
-10. Escribir `qmk compile -kb redox -km default` + enter, en QMK MSYS.
+10.   Escribir `qmk compile -kb redox -km default` + enter, en QMK MSYS.
 
 ### Cargar firmware
 Instalar [QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases/tag/0.2.2). Si te pide instalar drivers, instalalos. 
@@ -78,7 +79,11 @@ Te tendria que aparecer un texto amarillo en el QMK Toolbox, cuando te aparezca 
 LISTO! Ya tenes tu teclado. Cuando quieras cambiar la configuración del QMK, lo cambias en `qmk_firmware/keyboards/redox/keymaps/default/keymap.c`, lo volves a compilar (`10. `) y lo volves a [Cargar](#cargar-firmware).  
 
 ## VIAL
-in process  
+Hacemos el mismo proceso que en [QMK](#QMK), pero en lugar de utilizar `redox/keymaps/default` utilizamos `redox/keymaps/vial`.  
+Yo lo que hago es compilarlo tal cual esta y después modificar el keymap en vial directamente.  
+Para hacer el paso 10, hacemos `qmk compile -kb redox -km vial`. buscamos `redox_rev1_base_vial` y subimos ese archivo con [QMK Toolbox](#cargar-firmware).  
+
+Descargar la app para modificar el teclado en [get vial](https://get.vial.today/download/).
 
 ---
 # EN
