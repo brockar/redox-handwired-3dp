@@ -105,8 +105,8 @@ I made a Redox Handwired following all the references I found but it seemed to m
 * 2x: 3.5 mm 3-pin plug.  
 * 2x: Arduino pro micros.  
 * Cable.
-* Soldering iron.
-* Soldering iron.
+* Tin.
+* Tin welder.
 
 ## Steps to follow
 1. Print plates. You can choose that they are all 1u, I printed that one. [link](https://www.thingiverse.com/thing:2704567/files).  
