@@ -23,7 +23,7 @@
 ![my-redox](https://i.imgur.com/6SMD83O.jpeg)
 ![other-redox](https://i.imgur.com/jXOqhLl.jpeg)
 # ES
-Hice un Redox Handwired siguiendo todas las referencias que encontré pero se me hizo coomo que estaba todo muy disperso o poco explicado, así que voy a explicar cómo hacerlo.
+Hice un Redox Handwired siguiendo todas las referencias que encontré pero se me hizo como que estaba todo muy disperso o poco explicado, así que voy a explicar cómo hacerlo.
  
 ## Materiales
 * 70x: Switches compatibles con Cherry.  
